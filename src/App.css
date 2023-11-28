@@ -18,6 +18,40 @@
     font-size: 3rem;
 }
 
+.SelectorContainer {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.Selector {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 0.4rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: whitesmoke;
+    height: 3.5rem;
+    width: 80vw;
+    cursor: pointer;
+}
+
+.Options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #282c34;
+    color: whitesmoke;
+    width: 80vw;
+}
+
 .MicrophoneContainer {
     display: flex;
     flex-direction: column;

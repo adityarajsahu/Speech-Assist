@@ -7,11 +7,16 @@ import "./App.css";
 function App() {
     const { transcript, resetTranscript } = useSpeechRecognition();
     const [isListening, setIsListening] = useState(false);
+    const [selectedLanguage, setSelectedLanguage] = useState("en-US");
     const microphoneRef = useRef(null);
 
     if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
         return <div className="microphone-container">Browser does not support Speech Recognition.</div>;
     }
+
+    const handleDropdownChange = (event) => {
+        setSelectedLanguage(event.target.value);
+    };
 
     const handleListening = () => {
         setIsListening(true);
@@ -26,12 +31,12 @@ function App() {
         microphoneRef.current.classList.remove("listening");
         SpeechRecognition.stopListening();
         console.log("User Input: ", transcript);
-        translate(transcript, { from: "en", to: "hi" })
+        const languageCode = selectedLanguage.substring(0, 2);
+        translate(transcript, { from: "en", to: languageCode })
             .then((text) => {
                 console.log("Translated Text: ", text);
-                // text to speech
                 const speech = new SpeechSynthesisUtterance();
-                speech.lang = "hi-IN";
+                speech.lang = selectedLanguage;
                 speech.text = text;
                 window.speechSynthesis.speak(speech);
                 resetTranscript();
@@ -42,15 +47,32 @@ function App() {
             });
     };
 
-    // const handleReset = () => {
-    //     stopHandle();
-    //     resetTranscript();
-    // };
-
     return (
         <div className="App">
             <div className="HeaderContainer">
                 <h1 className="Header">Speech Assist</h1>
+            </div>
+            <div className="SelectorContainer">
+                <select className="Selector" value={selectedLanguage} onChange={handleDropdownChange}>
+                    <option value="en-US" selected>
+                        Select the Language
+                    </option>
+                    <option value="es-ES" className="Options">
+                        Spanish
+                    </option>
+                    <option value="fr-FR" className="Options">
+                        French
+                    </option>
+                    <option value="de-DE" className="Options">
+                        German
+                    </option>
+                    <option value="it-IT" className="Options">
+                        Italian
+                    </option>
+                    <option value="hi-IN" className="Options">
+                        Hindi
+                    </option>
+                </select>
             </div>
             <div className="MicrophoneContainer">
                 <div className="MicrophoneIconContainer">
@@ -74,29 +96,6 @@ function App() {
                 </div>
             </div>
         </div>
-        //     <div className="microphone-wrapper">
-        //         <div className="mircophone-container">
-        //             <div className="microphone-icon-container" ref={microphoneRef} onClick={handleListing}>
-        //                 <img src={microPhoneIcon} className="microphone-icon" alt="Microphone" />
-        //             </div>
-        //             <div className="microphone-status">
-        //                 {isListening ? "Listening........." : "Click to start Listening"}
-        //             </div>
-        //             {isListening && (
-        //                 <button className="microphone-stop btn" onClick={stopHandle}>
-        //                     Stop
-        //                 </button>
-        //             )}
-        //         </div>
-        //         {transcript && (
-        //             <div className="microphone-result-container">
-        //                 <div className="microphone-result-text">{transcript}</div>
-        //                 <button className="microphone-reset btn" onClick={handleReset}>
-        //                     Reset
-        //                 </button>
-        //             </div>
-        //         )}
-        //     </div>
     );
 }
 
