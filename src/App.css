@@ -1,4 +1,80 @@
-* {
+.App {
+    background-color: #282c34;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+}
+
+.HeaderContainer {
+    margin: 2rem;
+}
+
+.Header {
+    font-size: 3rem;
+}
+
+.MicrophoneContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.MicrophoneIconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.StartButton {
+    background-image: linear-gradient(128deg, #ffffff, #647c88);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.MicrophoneIcon {
+    padding: 2rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.MicrophoneStatus {
+}
+
+.MicrophoneStatusText {
+    font-size: 1.5rem;
+}
+
+.StopButtonContainer {
+    margin-top: 1.5rem;
+}
+
+.StopButton {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 0.4rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    height: 3.5rem;
+    width: 7rem;
+    cursor: pointer;
+}
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,7 +106,6 @@ body {
     padding: 20px;
     position: relative;
     cursor: pointer;
-    border: 20px solid blue;
 }
 
 .microphone-icon-container.listening::before {
@@ -101,4 +176,4 @@ body {
     background: none;
     color: white;
     width: fit-content;
-}
+} */
