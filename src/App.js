@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
 import translate from "translate";
 import microPhoneIcon from "./microphone.svg";
@@ -8,7 +8,6 @@ function App() {
     const { transcript, resetTranscript } = useSpeechRecognition();
     const [isListening, setIsListening] = useState(false);
     const [selectedLanguage, setSelectedLanguage] = useState("en-US");
-    const microphoneRef = useRef(null);
 
     if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
         return <div className="microphone-container">Browser does not support Speech Recognition.</div>;
@@ -20,7 +19,6 @@ function App() {
 
     const handleListening = () => {
         setIsListening(true);
-        microphoneRef.current.classList.add("listening");
         SpeechRecognition.startListening({
             continuous: true,
         });
@@ -28,7 +26,6 @@ function App() {
 
     const handleStop = () => {
         setIsListening(false);
-        microphoneRef.current.classList.remove("listening");
         SpeechRecognition.stopListening();
         console.log("User Input: ", transcript);
         const languageCode = selectedLanguage.substring(0, 2);
@@ -76,7 +73,7 @@ function App() {
             </div>
             <div className="MicrophoneContainer">
                 <div className="MicrophoneIconContainer">
-                    <button className="StartButton" ref={microphoneRef} onClick={handleListening}>
+                    <button className="StartButton" onClick={handleListening}>
                         <img src={microPhoneIcon} className="MicrophoneIcon" alt="Microphone" />
                     </button>
                 </div>
