@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
+import translate from "translate";
 import microPhoneIcon from "./microphone.svg";
 import "./App.css";
 
@@ -20,18 +21,31 @@ function App() {
         });
     };
 
-    const stopHandle = () => {
+    const handleStop = () => {
         setIsListening(false);
         microphoneRef.current.classList.remove("listening");
         SpeechRecognition.stopListening();
-        console.log(transcript);
-        resetTranscript();
+        console.log("User Input: ", transcript);
+        translate(transcript, { from: "en", to: "hi" })
+            .then((text) => {
+                console.log("Translated Text: ", text);
+                // text to speech
+                const speech = new SpeechSynthesisUtterance();
+                speech.lang = "hi-IN";
+                speech.text = text;
+                window.speechSynthesis.speak(speech);
+                resetTranscript();
+            })
+            .catch((err) => {
+                console.log(err);
+                resetTranscript();
+            });
     };
 
-    const handleReset = () => {
-        stopHandle();
-        resetTranscript();
-    };
+    // const handleReset = () => {
+    //     stopHandle();
+    //     resetTranscript();
+    // };
 
     return (
         <div className="App">
@@ -53,7 +67,7 @@ function App() {
                 </div>
                 <div className="StopButtonContainer">
                     {isListening && (
-                        <button className="StopButton" onClick={stopHandle}>
+                        <button className="StopButton" onClick={handleStop}>
                             Stop
                         </button>
                     )}
