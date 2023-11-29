@@ -236,9 +236,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Adityaraj Sahu - [@adityaraj_sahu](https://twitter.com/adityaraj_sahu) - adityaraj2019.sahu@gmail.com
-
-Project Link: [Speech Assist](https://github.com/adityarajsahu/Speech-Assist)
+<a href="https://instagram.com/aadityaraj_sahu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="aadityaraj_sahu" height="30" width="40" /></a>
+<a href="https://twitter.com/adityaraj_sahu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="adityaraj_sahu" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/adityaraj-sahu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="adityaraj-sahu" height="30" width="40" /></a>
+<a href="mailto:adityaraj2019.sahu@gmail.com" target="blank"><img align="center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1q2cVhHdLksImX5hR7_8YYk6hCVqAkfCq-I7pyaVwmxIAWecbBnJ9vtHy6uRYU_32nYg&usqp=CAU" alt="adityaraj-sahu" height="30" width="40" /></a>
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
