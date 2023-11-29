@@ -29,23 +29,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/adityarajsahu/Speech-Assist">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Speech Assist</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Speak the world's language with ease – Your voice, translated to connect across borders effortlessly!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/adityarajsahu/Speech-Assist"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/adityarajsahu/Speech-Assist">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/adityarajsahu/Speech-Assist/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/adityarajsahu/Speech-Assist/issues">Request Feature</a>
   </p>
 </div>
 
@@ -64,14 +64,14 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#start-the-application">Start the Application</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#demonstration">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -79,98 +79,118 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Speech Assist][product-screenshot]](https://incredible-stardust-1155ac.netlify.app/)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Introducing my revolutionary application that transcends language barriers with the power of your voice. Seamlessly communicate with people from diverse backgrounds as our app listens to your speech and translates it into your selected language. Here's why it's a game changer:
 
-Here's why:
+-   **Real-Time Translation:** Experience instant and accurate translations, enabling smooth conversations without delay.
+-   **Global Connectivity:** Connect with people worldwide effortlessly, fostering understanding and collaboration across borders.
+-   **User-Friendly Interface:** Intuitive and easy to use, our app ensures a hassle-free experience, making multilingual communication accessible to everyone. Unlock a world of possibilities with the simplicity of your speech.
 
--   Your time should be focused on creating something amazing. A project that solves a problem and helps others
--   You shouldn't be doing the same tasks over and over like creating a README from scratch
--   You should implement DRY principles to the rest of your life :smile:
+The application currently supports English, Spanish, French, German, Italian and Hindi languages.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+The Speech Assist application is meticulously crafted using a sophisticated array of cutting-edge frameworks and libraries, each meticulously chosen to enhance the user experience and functionality. Leveraging the power of modern technology, the application seamlessly integrates with a robust set of frameworks and libraries, to ensure optimal performance, real-time speech processing, and accurate langauge translation.
 
--   [![Next][Next.js]][Next-url]
+-   [![JavaScript][js]][js-url]
 -   [![React][React.js]][React-url]
--   [![Vue][Vue.js]][Vue-url]
--   [![Angular][Angular.io]][Angular-url]
--   [![Svelte][Svelte.dev]][Svelte-url]
--   [![Laravel][Laravel.com]][Laravel-url]
--   [![Bootstrap][Bootstrap.com]][Bootstrap-url]
--   [![JQuery][JQuery.com]][JQuery-url]
+-   [![React Speech Recognition][react-speech-recognition]][react-speech-recognition-url]
+-   [![Translate][translate]][translate-url]
+-   [![CSS][css]][css-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- GETTING STARTED -->
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Welcome to the Getting Started section, your gateway to unleashing the power of Speech Assist on your device! This step-by-step guide is designed to walk you though the basic installation process, ensuring a smooth setup that brings our innovative langauge translation application to life on your local device.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Below are the prerequisites needed to run the application on your device locally. Follow the provided instructions to install them seamlessly, ensuring a hassle-free setup process that paves the way for experiencing the full functionality of the application.
 
--   npm
-    ```sh
+-   Download and install from this [link](https://nodejs.org/en/download) according to your operating system.
+
+-   For MacOS and Linux, install Node Package Manager (npm) as a separate step
+    ```
     npm install npm@latest -g
+    ```
+-   Check if Node.js as well as Node Package Manager are installed in your device
+
+    ```
+    node --version
+    npm --version
     ```
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+Below are the prerequisites needed to run the application on your device locally. Follow the provided instructions to install them seamlessly, ensuring a hassle-free setup process that paves the way for experiencing the full functionality of the application.
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-    ```sh
-    git clone https://github.com/your_username_/Project-Name.git
+-   Clone the repository
+
     ```
-3. Install NPM packages
-    ```sh
+    git clone https://github.com/adityarajsahu/Speech-Assist.git
+    ```
+
+-   Move into the Speech-Assist directory
+
+    ```
+    cd Speech-Assist
+    ```
+
+-   Install the NPM dependencies required for running the application
+
+    ```
     npm install
     ```
-4. Enter your API in `config.js`
-    ```js
-    const API_KEY = "ENTER YOUR API";
+
+### Start the Application
+
+Follow these instruction to launch the application locally on device to experience real-time speech translation.
+
+-   Command to start the application on privately on localhost
+
+    ```
+    npm start
     ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+-   In order the use the application on other device connected over a common public network, find the IPv4 address of your device and use this command
+    ```
+    npm start --host <IPv4_ADDRESS>
+    ```
+
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
+## Demonstration
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Welcome to the Demonstration section, where I bring the magic of Speech Assist to life. Join me as I showcase the application's functionality, illustrating how it seamlessly transforms spoken words into global communication.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<!-- Embed Youtube Video -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- ROADMAP -->
 
 ## Roadmap
 
--   [x] Add Changelog
--   [x] Add back to top links
--   [ ] Add Additional Templates w/ Examples
--   [ ] Add "components" document to easily copy & paste sections of the readme
--   [ ] Multi-language Support
-    -   [ ] Chinese
-    -   [ ] Spanish
+-   [x] Listen to Human Speech in English and manage it in a state as string
+-   [x] Create a dropdown to select the language to which the string needs to be translated
+-   [x] Translate the string to the selected language
+-   [x] Convert the string to speech
+-   [ ] Multi-Language Support
+    -   [ ] Support multiple languages other than English as input speech
+    -   [ ] Support multiple languages as output speech
+-   [ ] Create wave animation around microphone button when device is listening to speech
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/adityarajsahu/Speech-Assist/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- CONTRIBUTING -->
 
@@ -181,13 +201,28 @@ Contributions are what make the open source community such an amazing place to l
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+-   Fork the Project
+-   Create your Feature Branch
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+    ```
+    git checkout -b feature
+    ```
+
+-   Commit your Changes
+
+    ```
+    git commit -m "Added a new feature"
+    ```
+
+-   Push to the Branch
+
+    ```
+    git push origin feature
+    ```
+
+-   Open a Pull Request
+
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- LICENSE -->
 
@@ -195,64 +230,41 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- CONTACT -->
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Adityaraj Sahu - [@adityaraj_sahu](https://twitter.com/adityaraj_sahu) - adityaraj2019.sahu@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [Speech Assist](https://github.com/adityarajsahu/Speech-Assist)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
--   [Choose an Open Source License](https://choosealicense.com)
--   [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
--   [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
--   [Malven's Grid Cheatsheet](https://grid.malven.co/)
--   [Img Shields](https://shields.io)
--   [GitHub Pages](https://pages.github.com)
--   [Font Awesome](https://fontawesome.com)
--   [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/adityarajsahu/Speech-Assist.svg?style=for-the-badge
 [contributors-url]: https://github.com/adityarajsahu/Speech-Assist/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/adityarajsahu/Speech-Assist.svg?style=for-the-badge
 [forks-url]: https://github.com/adityarajsahu/Speech-Assist/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/adityarajsahu/Speech-Assist.svg?style=for-the-badge
 [stars-url]: https://github.com/adityarajsahu/Speech-Assist/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/adityarajsahu/Speech-Assist.svg?style=for-the-badge
 [issues-url]: https://github.com/adityarajsahu/Speech-Assist/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/adityarajsahu/Speech-Assist.svg?style=for-the-badge
+[license-url]: https://github.com/adityarajsahu/Speech-Assist/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://www.linkedin.com/in/adityaraj-sahu/
 [product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
+[js]: https://img.shields.io/badge/javascript-000000?style=for-the-badge&logo=javascript&logoColor=white
+[js-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com
+[react-speech-recognition]: https://img.shields.io/badge/react_speech_recognition-35495E?style=for-the-badge&logo=reactspeechrecognition&logoColor=4FC08D
+[react-speech-recognition-url]: https://www.npmjs.com/package/react-speech-recognition
+[translate]: https://img.shields.io/badge/translate-DD0031?style=for-the-badge&logo=translate&logoColor=white
+[translate-url]: https://github.com/franciscop/translate
+[css]: https://img.shields.io/badge/css-4A4A55?style=for-the-badge&logo=css&logoColor=FF3E00
+[css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
