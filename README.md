@@ -187,6 +187,7 @@ Welcome to the Demonstration section, where I bring the magic of Speech Assist t
     -   [ ] Support multiple languages other than English as input speech
     -   [ ] Support multiple languages as output speech
 -   [ ] Create wave animation around microphone button when device is listening to speech
+-   [ ] Create cross-platform application using React Native Webview
 
 See the [open issues](https://github.com/adityarajsahu/Speech-Assist/issues) for a full list of proposed features (and known issues).
 
