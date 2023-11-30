@@ -41,7 +41,7 @@
     <a href="https://github.com/adityarajsahu/Speech-Assist"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/adityarajsahu/Speech-Assist">View Demo</a>
+    <a href="https://incredible-stardust-1155ac.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/adityarajsahu/Speech-Assist/issues">Report Bug</a>
     ·
@@ -170,6 +170,8 @@ Follow these instruction to launch the application locally on device to experien
 ## Demonstration
 
 Welcome to the Demonstration section, where I bring the magic of Speech Assist to life. Join me as I showcase the application's functionality, illustrating how it seamlessly transforms spoken words into global communication.
+
+[![Video](https://img.youtube.com/vi/4VA3_0gw-bs/maxresdefault.jpg)](https://www.youtube.com/watch?v=4VA3_0gw-bs)
 
 <!-- Embed Youtube Video -->
 
